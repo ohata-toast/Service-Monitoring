@@ -5,14 +5,14 @@
 API Endpoint: https://api-service-monitoring.cloud.toast.com
 ```
 
-## バッチモニタリング
+## 単一バッチモニタリング
 
 ### データ転送
 - バッチモニタリングサーバーに、検証が必要なデータを転送します。
 - バッチモニタリングに入力した検証情報に基づいたJSONタイプのデータを転送することができ、バッチモニタリングの検証に失敗した場合は障害に登録されます。
 
 [URL]
-```
+```http
 POST /v1.0/monitoring/batchmon/appkey/{appKey}/scenarios/{scenarioId}
 Content-Type: application/json
 ```
@@ -46,13 +46,12 @@ Content-Type: application/json
             "requestId": "3f136280-9d6a-11e9-83b4-ff39d67ddecf"
         },
         "scenarioId": "b00699c0-96f4-11e9-a68b-a7aaea9ae346",
-        "ipaddr": "192.168.0.1",
+        "ipaddr": "127.0.0.1",
         "requestTime": "2099-12-31T00:00:00.000",
         "requestData": {
             "body": "{\"issueDescription\": \"This is test message.\"}"
         },
         "serviceCode": 0,
-        "status": "beforeValidation"
     }
 }
 ```
