@@ -1,5 +1,13 @@
 ## Management > Service Monitoring > リリースノート
 
+### 2020. 03. 24.
+
+#### 機能改善
+* Webモニタリングデータ検証時、[JsonPathメソッド](/ko/Management/Service%20Monitoring/ko/console-guide/#_9)を提供
+* メール障害メッセージに_組織名_、_プロジェクト名_ を追加
+* [多重バッチモニタリング検証API](/ko/Management/Service%20Monitoring/ko/api-guide/)をサポート
+* バッチモニタリング内容検証結果で失敗した内容を強調表示
+
 ### 2020. 01. 21.
 
 #### 機能改善
